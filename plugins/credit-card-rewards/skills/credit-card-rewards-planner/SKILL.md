@@ -1,6 +1,13 @@
 ---
 name: credit-card-rewards-planner
-description: Find and compare rewards credit cards, welcome bonuses, travel cards, airline and hotel cards, zero-interest cards, category earn rates, credits, and cardholder benefits; build credit-card application sequencing plans, including Chase 5/24-aware paths and benefit reminder workflows. Use when Codex needs to research current card offers, match cards to a user's spend and travel needs, optimize a credit-card rewards journey, or design monthly reminders for card benefits, credits, annual fees, and bonus deadlines.
+description: >
+  Find and compare rewards credit cards, welcome bonuses, travel cards, airline
+  and hotel cards, zero-interest cards, category earn rates, credits, and
+  cardholder benefits; build credit-card application sequencing plans, including
+  Chase 5/24-aware paths and benefit reminder workflows. Use when Codex needs to
+  research current card offers, match cards to a user's spend and travel needs,
+  optimize a credit-card rewards journey, or design monthly reminders for card
+  benefits, credits, annual fees, and bonus deadlines.
 ---
 
 # Credit Card Rewards Planner
