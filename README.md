@@ -19,8 +19,6 @@ OpenAI's Codex docs describe skills as the authoring format and plugins as the i
 
 ### Install With `npx plugins add`
 
-This repo also includes Agent Skills / Claude-compatible marketplace metadata so users can install it the same way as `finance-skills`:
-
 ```bash
 npx plugins add Balbalnom/credit-card-skills
 ```
@@ -97,8 +95,8 @@ Use $credit-card-rewards-planner at /path/to/credit-card-skills/plugins/credit-c
 
 Research current credit-card offers, compare rewards and welcome bonuses, build Chase 5/24-aware application paths, and design benefit reminder workflows.
 
-| Skill | Description |
-| --- | --- |
+| Skill                         | Description                                                                                                                                |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
 | `credit-card-rewards-planner` | Finds and compares rewards cards, travel cards, airline/hotel cards, 0% APR cards, usage benefits, welcome bonuses, and application paths. |
 
 ## Example Prompts
