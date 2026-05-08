@@ -1,12 +1,13 @@
 {
   "name": "credit-card-rewards",
-  "description": "Research credit-card offers, compare rewards and bonuses, build 5/24-aware application paths, and design benefit reminders.",
   "version": "0.1.0",
+  "description": "Research credit-card offers, compare rewards and bonuses, build 5/24-aware application paths, and design benefit reminders.",
   "author": {
-    "name": "YOUR-NAME"
+    "name": "Balbalnom",
+    "url": "https://github.com/Balbalnom"
   },
-  "homepage": "https://github.com/YOUR-USERNAME/credit-card-skills",
-  "repository": "https://github.com/YOUR-USERNAME/credit-card-skills",
+  "homepage": "https://github.com/Balbalnom/credit-card-skills",
+  "repository": "https://github.com/Balbalnom/credit-card-skills",
   "license": "MIT",
   "keywords": [
     "credit-cards",
@@ -17,5 +18,24 @@
     "cash-back",
     "5/24",
     "welcome-bonus"
-  ]
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Credit Card Rewards",
+    "shortDescription": "Compare cards, bonuses, rewards, and 5/24 paths",
+    "longDescription": "Use Credit Card Rewards to research current card offers, compare rewards and welcome bonuses, match cards to user goals, build Chase 5/24-aware application paths, and design benefit reminder workflows.",
+    "developerName": "Balbalnom",
+    "category": "Productivity",
+    "capabilities": [
+      "Read"
+    ],
+    "websiteURL": "https://github.com/Balbalnom/credit-card-skills",
+    "defaultPrompt": [
+      "Compare travel rewards cards for my spending.",
+      "Build a Chase 5/24-aware card plan.",
+      "Create monthly card benefit reminders."
+    ],
+    "brandColor": "#0F766E",
+    "screenshots": []
+  }
 }

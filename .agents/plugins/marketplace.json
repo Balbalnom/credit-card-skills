@@ -1,18 +1,20 @@
 {
   "name": "credit-card-skills",
-  "owner": {
-    "name": "YOUR-NAME"
-  },
-  "metadata": {
-    "description": "Agent skills for credit-card rewards research, card matching, application sequencing, 5/24 planning, and benefit reminders.",
-    "version": "0.1.0"
+  "interface": {
+    "displayName": "Credit Card Skills"
   },
   "plugins": [
     {
       "name": "credit-card-rewards",
-      "source": "./plugins/credit-card-rewards",
-      "description": "Research credit-card offers, compare rewards and bonuses, build 5/24-aware application paths, and design benefit reminders.",
-      "version": "0.1.0"
+      "source": {
+        "source": "local",
+        "path": "./plugins/credit-card-rewards"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
     }
   ]
 }

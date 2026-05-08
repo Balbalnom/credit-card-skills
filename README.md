@@ -4,57 +4,59 @@ Agent skills for credit-card rewards planning, card matching, application sequen
 
 > This project is for educational and informational purposes only. It is not financial, legal, tax, or credit repair advice. Credit-card offers and issuer rules change often; agents using this skill should verify current public sources.
 
-## Quick Start
+## OpenAI / Codex Pattern
 
-### Claude Code / Compatible Plugin CLI
+This repository follows the Codex plugin layout used by OpenAI's plugin examples:
 
-Install all plugins from this repository:
+- Repo marketplace: `.agents/plugins/marketplace.json`
+- Plugin folder: `plugins/credit-card-rewards/`
+- Plugin manifest: `plugins/credit-card-rewards/.codex-plugin/plugin.json`
+- Bundled skills: `plugins/credit-card-rewards/skills/`
+
+OpenAI's Codex docs describe skills as the authoring format and plugins as the installable distribution unit for reusable skills. For local authoring, Codex can also read direct skill folders from `.agents/skills` and user skill folders.
+
+## Install In Codex
+
+### Codex App
+
+1. Open the Codex plugin directory.
+2. Add or select the marketplace for this repository after it is published.
+3. Install `credit-card-rewards`.
+4. Start a new thread and invoke the plugin or its bundled skill.
+
+### Codex CLI
+
+Open Codex and use the plugin browser:
 
 ```bash
-npx plugins add YOUR-USERNAME/credit-card-skills
+codex
+/plugins
 ```
 
-Install only the credit-card rewards plugin:
+In the plugin browser, select the marketplace for this repository, open `credit-card-rewards`, and install it.
+
+## Manual Local Marketplace
+
+For local testing before publishing, clone this repo and keep the marketplace file at `.agents/plugins/marketplace.json`:
 
 ```bash
-npx plugins add YOUR-USERNAME/credit-card-skills --plugin credit-card-rewards
-```
-
-### Individual Skills CLI
-
-Install the skills from this repository:
-
-```bash
-npx skills add YOUR-USERNAME/credit-card-skills
-```
-
-Install for another supported agent:
-
-```bash
-npx skills add YOUR-USERNAME/credit-card-skills -a <agent-name>
-```
-
-Replace `YOUR-USERNAME` with the GitHub account or organization that owns the published repo.
-
-## Available Plugins
-
-### Credit Card Rewards (`credit-card-rewards`)
-
-Research current credit-card offers, compare rewards and welcome bonuses, build Chase 5/24-aware application paths, and design benefit reminder workflows.
-
-| Skill | Description |
-| --- | --- |
-| `credit-card-rewards-planner` | Finds and compares rewards cards, travel cards, airline/hotel cards, 0% APR cards, usage benefits, welcome bonuses, and application paths. |
-
-## Manual Install
-
-If you do not use the plugin CLI, clone the repo and copy the skill into your Codex skills directory:
-
-```bash
-git clone https://github.com/YOUR-USERNAME/credit-card-skills.git
+git clone https://github.com/Balbalnom/credit-card-skills.git
 cd credit-card-skills
-mkdir -p ~/.codex/skills
-cp -R plugins/credit-card-rewards/skills/credit-card-rewards-planner ~/.codex/skills/
+codex
+/plugins
+```
+
+The marketplace entry points to `./plugins/credit-card-rewards`, which contains the `.codex-plugin/plugin.json` manifest and bundled skill.
+
+## Manual Skill Install
+
+If you only want the skill without plugin packaging, copy it into a Codex skills location:
+
+```bash
+git clone https://github.com/Balbalnom/credit-card-skills.git
+cd credit-card-skills
+mkdir -p ~/.agents/skills
+cp -R plugins/credit-card-rewards/skills/credit-card-rewards-planner ~/.agents/skills/
 ```
 
 Restart Codex or start a new session so the skill metadata is loaded.
@@ -66,6 +68,16 @@ You can reference the skill folder directly from a local checkout:
 ```text
 Use $credit-card-rewards-planner at /path/to/credit-card-skills/plugins/credit-card-rewards/skills/credit-card-rewards-planner to build a Chase 5/24-aware card application path.
 ```
+
+## Available Plugin
+
+### Credit Card Rewards (`credit-card-rewards`)
+
+Research current credit-card offers, compare rewards and welcome bonuses, build Chase 5/24-aware application paths, and design benefit reminder workflows.
+
+| Skill | Description |
+| --- | --- |
+| `credit-card-rewards-planner` | Finds and compares rewards cards, travel cards, airline/hotel cards, 0% APR cards, usage benefits, welcome bonuses, and application paths. |
 
 ## Example Prompts
 
@@ -85,11 +97,13 @@ Use $credit-card-rewards-planner to create monthly reminders for my current card
 
 ```text
 .
-├── .claude-plugin/
-│   └── marketplace.json
+├── .agents/
+│   └── plugins/
+│       └── marketplace.json
 ├── plugins/
 │   └── credit-card-rewards/
-│       ├── plugin.json
+│       ├── .codex-plugin/
+│       │   └── plugin.json
 │       └── skills/
 │           └── credit-card-rewards-planner/
 │               ├── SKILL.md
@@ -97,11 +111,3 @@ Use $credit-card-rewards-planner to create monthly reminders for my current card
 │               └── references/
 └── README.md
 ```
-
-## Before Publishing
-
-Update these placeholders:
-
-- `YOUR-USERNAME` in `README.md`.
-- `YOUR-NAME` in `.claude-plugin/marketplace.json`.
-- `YOUR-NAME`, `homepage`, and `repository` in `plugins/credit-card-rewards/plugin.json`.
