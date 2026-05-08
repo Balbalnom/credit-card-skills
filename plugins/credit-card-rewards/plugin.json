@@ -1,0 +1,21 @@
+{
+  "name": "credit-card-rewards",
+  "description": "Research credit-card offers, compare rewards and bonuses, build 5/24-aware application paths, and design benefit reminders.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Balbalnom"
+  },
+  "homepage": "https://github.com/Balbalnom/credit-card-skills",
+  "repository": "https://github.com/Balbalnom/credit-card-skills",
+  "license": "MIT",
+  "keywords": [
+    "credit-cards",
+    "rewards",
+    "travel",
+    "points",
+    "miles",
+    "cash-back",
+    "5/24",
+    "welcome-bonus"
+  ]
+}

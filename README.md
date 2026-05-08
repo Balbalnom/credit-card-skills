@@ -17,6 +17,28 @@ OpenAI's Codex docs describe skills as the authoring format and plugins as the i
 
 ## Install In Codex
 
+### Install With `npx plugins add`
+
+This repo also includes Agent Skills / Claude-compatible marketplace metadata so users can install it the same way as `finance-skills`:
+
+```bash
+npx plugins add Balbalnom/credit-card-skills
+```
+
+Install only this plugin:
+
+```bash
+npx plugins add Balbalnom/credit-card-skills --plugin credit-card-rewards
+```
+
+That command does not install a bare `SKILL.md` directly. It reads `.claude-plugin/marketplace.json`, downloads the plugin from `plugins/credit-card-rewards`, then exposes the bundled skill from `plugins/credit-card-rewards/skills/credit-card-rewards-planner`.
+
+For installers that support direct skill installation:
+
+```bash
+npx skills add Balbalnom/credit-card-skills
+```
+
 ### Codex App
 
 1. Open the Codex plugin directory.
@@ -100,10 +122,13 @@ Use $credit-card-rewards-planner to create monthly reminders for my current card
 ├── .agents/
 │   └── plugins/
 │       └── marketplace.json
+├── .claude-plugin/
+│   └── marketplace.json
 ├── plugins/
 │   └── credit-card-rewards/
 │       ├── .codex-plugin/
 │       │   └── plugin.json
+│       ├── plugin.json
 │       └── skills/
 │           └── credit-card-rewards-planner/
 │               ├── SKILL.md
