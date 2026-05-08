@@ -1,0 +1,49 @@
+{
+  "name": "credit-card-discounts",
+  "version": "0.1.0",
+  "description": "Find card-linked offers, issuer discounts, shopping portal deals, brand promotions, and stackable savings for planned purchases.",
+  "author": {
+    "name": "Balbalnom",
+    "url": "https://github.com/Balbalnom"
+  },
+  "homepage": "https://github.com/Balbalnom/credit-card-skills",
+  "repository": "https://github.com/Balbalnom/credit-card-skills",
+  "license": "MIT",
+  "keywords": [
+    "credit-cards",
+    "discounts",
+    "coupon",
+    "promo-code",
+    "card-linked-offers",
+    "shopping-portals",
+    "cash-back",
+    "brand-deals",
+    "amex-offers",
+    "chase-offers",
+    "citi-merchant-offers",
+    "bankamerideals",
+    "rakuten",
+    "topcashback",
+    "capital-one-shopping",
+    "statement-credit"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Credit Card Discounts",
+    "shortDescription": "Find card offers and stackable brand savings",
+    "longDescription": "Use Credit Card Discounts to match a user's credit cards to card-linked offers, shopping portals, merchant promotions, statement credits, and stackable savings for desired brands or planned purchases.",
+    "developerName": "Balbalnom",
+    "category": "Productivity",
+    "capabilities": [
+      "Read"
+    ],
+    "websiteURL": "https://github.com/Balbalnom/credit-card-skills",
+    "defaultPrompt": [
+      "Find discounts for my cards at Nike.",
+      "Which card should I use for this brand?",
+      "Find stackable offers for a laptop purchase."
+    ],
+    "brandColor": "#2563EB",
+    "screenshots": []
+  }
+}

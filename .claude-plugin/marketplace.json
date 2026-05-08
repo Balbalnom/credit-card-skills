@@ -4,7 +4,7 @@
     "name": "Balbalnom"
   },
   "metadata": {
-    "description": "Agent skills for credit-card rewards research, card matching, application sequencing, 5/24 planning, and benefit reminders.",
+    "description": "Agent skills for credit-card rewards research, card matching, discount discovery, application sequencing, 5/24 planning, and benefit reminders.",
     "version": "0.1.0"
   },
   "plugins": [
@@ -12,6 +12,12 @@
       "name": "credit-card-rewards",
       "source": "./plugins/credit-card-rewards",
       "description": "Research credit-card offers, compare rewards and bonuses, build 5/24-aware application paths, and design benefit reminders.",
+      "version": "0.1.0"
+    },
+    {
+      "name": "credit-card-discounts",
+      "source": "./plugins/credit-card-discounts",
+      "description": "Find card-linked offers, issuer discounts, shopping portal deals, brand promotions, and stackable savings for planned purchases.",
       "version": "0.1.0"
     }
   ]

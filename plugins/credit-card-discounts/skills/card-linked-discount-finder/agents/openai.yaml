@@ -1,0 +1,4 @@
+interface:
+  display_name: "Card Linked Discount Finder"
+  short_description: "Find card-linked offers and brand savings"
+  default_prompt: "Use $card-linked-discount-finder to find stackable discounts for a planned purchase."

@@ -1,0 +1,25 @@
+{
+  "name": "credit-card-discounts",
+  "description": "Find card-linked offers, issuer discounts, shopping portal deals, brand promotions, and stackable savings for planned purchases.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Balbalnom"
+  },
+  "homepage": "https://github.com/Balbalnom/credit-card-skills",
+  "repository": "https://github.com/Balbalnom/credit-card-skills",
+  "license": "MIT",
+  "keywords": [
+    "credit-cards",
+    "discounts",
+    "coupon",
+    "promo-code",
+    "card-linked-offers",
+    "shopping-portals",
+    "cash-back",
+    "brand-deals",
+    "amex-offers",
+    "chase-offers",
+    "rakuten",
+    "statement-credit"
+  ]
+}
