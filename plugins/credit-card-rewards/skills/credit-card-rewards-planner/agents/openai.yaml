@@ -1,0 +1,4 @@
+interface:
+  display_name: "Credit Card Rewards Planner"
+  short_description: "Optimize cards, bonuses, and reward timing"
+  default_prompt: "Use $credit-card-rewards-planner to compare reward credit cards and build a bonus-aware card strategy."
